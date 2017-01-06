@@ -23,7 +23,10 @@ int main() {
     val = atoi(card_name);
   }
 
-  printf("カードの値：%i\n", val);
+  if ((val >= 3) && (val <= 6))
+    puts("カウントが増えます");
+  else if (val == 10)
+    puts("カウントが減ります");
 
   return 0;
 }
